@@ -116,14 +116,20 @@ p.lead {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   font-family: var(--font-display);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: var(--cream);
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.brand img { height: 34px; width: auto; }
+.brand img { height: 30px; width: auto; flex-shrink: 0; }
+
+@media (max-width: 920px) {
+  .site-header .brand span.brand-text { display: none; }
+}
 
 .main-nav {
   display: flex;
