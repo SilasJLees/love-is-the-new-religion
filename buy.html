@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buy the Book — Love Is The New Religion</title>
+<meta name="description" content="Buy Love Is The New Religion by Silas J. Lees on Amazon UK, with US and signed-copy options coming soon.">
+<link rel="icon" type="image/png" href="assets/img/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-icon.png" alt="Winged Heart emblem">
+      Love Is The New Religion
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="the-book.html">The Book</a>
+      <a href="my-story.html">My Story</a>
+      <a href="buy.html" class="active">Buy</a>
+      <a href="press.html">Press & Media</a>
+      <a href="journal.html">Journal</a>
+      <a href="contact.html">Contact</a>
+      <a href="buy.html" class="btn btn-primary nav-cta">Buy the Book</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Buy the Book</p>
+    <h1>Get Your Copy</h1>
+    <p class="lead">Choose your region below.</p>
+  </div>
+</section>
+
+<section class="section" style="text-align:center;">
+  <div class="wrap">
+    <div class="region-toggle">
+      <button type="button" data-region-btn="uk" class="active">United Kingdom</button>
+      <button type="button" data-region-btn="us">United States</button>
+    </div>
+
+    <div data-region-panel="uk" class="region-panel active">
+      <img src="assets/img/book-cover.jpg" alt="Love Is The New Religion — book cover" style="max-width:220px;margin:0 auto 32px;">
+      <p><a href="https://www.amazon.co.uk/Love-New-Religion-Silas-Lees-ebook/dp/B07F6X97KV/" target="_blank" rel="noopener" class="btn btn-primary">Buy on Amazon.co.uk</a></p>
+    </div>
+
+    <div data-region-panel="us" class="region-panel">
+      <img src="assets/img/book-cover.jpg" alt="Love Is The New Religion — book cover" style="max-width:220px;margin:0 auto 32px;">
+      <!-- TODO: swap in the live amazon.com link once the US ASIN is confirmed -->
+      <p class="btn btn-secondary" style="cursor:default;opacity:.7;">US Amazon link coming soon</p>
+      <p class="form-note">US listing pending &mdash; ASIN to be confirmed. In the meantime, UK visitors and US visitors alike can use the UK link above.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid-3">
+      <div class="card" style="text-align:center;">
+        <h3>Ebook</h3>
+        <p>Instant delivery via Amazon Kindle.</p>
+      </div>
+      <div class="card" style="text-align:center;">
+        <h3>Paperback</h3>
+        <!-- TODO: confirm paperback details -->
+        <p>Details coming soon.</p>
+      </div>
+      <div class="card card-gold" style="text-align:center;">
+        <h3>Signed Copy</h3>
+        <!-- TODO: wire up a real fulfilment link/process for signed copies -->
+        <p>Buy a copy signed directly by Silas, with a handwritten note. Details coming soon &mdash; get in touch to be notified when this opens.</p>
+        <a href="contact.html" class="btn btn-ghost" style="margin-top:12px;">Get in Touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid-2">
+      <div class="card card-gold quote-card">
+        <p class="editorial">&ldquo;Rarely do we encounter spiritual insights, hidden historical facts, and a kindling hope for humanity's awakening that is cleverly masquerading as a gripping novel.&rdquo;</p>
+        <p class="attr">&mdash; Aleks Mikic, Author, USA</p>
+      </div>
+      <div class="card quote-card">
+        <p class="editorial">&ldquo;Quote text pending.&rdquo;</p>
+        <p class="attr">&mdash; Property Investor and Speaker, UK</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-icon.png" alt="Winged Heart emblem">
+      Love Is The New Religion
+    </a>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="the-book.html">The Book</a>
+      <a href="my-story.html">My Story</a>
+      <a href="buy.html">Buy</a>
+      <a href="press.html">Press & Media</a>
+      <a href="journal.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-cta">
+      <a href="buy.html" class="btn btn-primary">Buy the Book</a>
+    </div>
+    <div class="social-links">
+      <!-- TODO: add real social links once Silas is active on any platforms -->
+      <a href="mailto:love@loveisthenewreligion.com" aria-label="Email">&#9993;</a>
+    </div>
+    <p class="footer-meta" style="margin-top:28px;">&copy; <span id="year"></span> Silas J. Lees. All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

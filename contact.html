@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Love Is The New Religion</title>
+<meta name="description" content="Get in touch with Silas J. Lees, or join the newsletter for a free preview of Love Is The New Religion.">
+<link rel="icon" type="image/png" href="assets/img/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-icon.png" alt="Winged Heart emblem">
+      Love Is The New Religion
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="the-book.html">The Book</a>
+      <a href="my-story.html">My Story</a>
+      <a href="buy.html">Buy</a>
+      <a href="press.html">Press & Media</a>
+      <a href="journal.html">Journal</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="buy.html" class="btn btn-primary nav-cta">Buy the Book</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h1>Get in Touch</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <h2>Send a Message</h2>
+      <form data-signup>
+        <div class="form-row"><input class="field" type="text" name="name" placeholder="Your name" required></div>
+        <div class="form-row"><input class="field" type="email" name="email" placeholder="Your email" required></div>
+        <div class="form-row"><textarea class="field" name="message" placeholder="Your message" required></textarea></div>
+        <button type="submit" class="btn btn-primary">Send</button>
+        <p class="form-success">Thank you &mdash; your message has been sent.</p>
+      </form>
+      <p class="form-note">Or email directly: <a href="mailto:love@loveisthenewreligion.com" style="color:var(--gold-400);">love@loveisthenewreligion.com</a></p>
+    </div>
+    <div>
+      <h2>Join the Newsletter</h2>
+      <p>Get the free Introduction and Chapter One, plus updates on the book, the journal, and what's next.</p>
+      <form class="signup" data-signup>
+        <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+        <p class="form-success">Thank you &mdash; check your inbox shortly.</p>
+      </form>
+      <p class="form-note">
+        <!-- TODO: no email provider connected yet. Recommend Mailchimp (generous free
+             tier, simple embed) for the newsletter + lead magnet delivery, or
+             ConvertKit/Kit if more author-focused automation is wanted. Once an account
+             exists, replace this form's submit handling with the provider's embed
+             code / API and remove the data-signup no-op in main.js for this form. -->
+        No email list is connected yet &mdash; see the README for a recommended provider and setup steps.
+      </p>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-icon.png" alt="Winged Heart emblem">
+      Love Is The New Religion
+    </a>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="the-book.html">The Book</a>
+      <a href="my-story.html">My Story</a>
+      <a href="buy.html">Buy</a>
+      <a href="press.html">Press & Media</a>
+      <a href="journal.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-cta">
+      <a href="buy.html" class="btn btn-primary">Buy the Book</a>
+    </div>
+    <div class="social-links">
+      <!-- TODO: add real social links once Silas is active on any platforms -->
+      <a href="mailto:love@loveisthenewreligion.com" aria-label="Email">&#9993;</a>
+    </div>
+    <p class="footer-meta" style="margin-top:28px;">&copy; <span id="year"></span> Silas J. Lees. All rights reserved.</p>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
