@@ -88,19 +88,20 @@ kind of wiring (a simple form backend like Formspree, or a small server-side end
 
 ## Outstanding items (flagged inline with `<!-- TODO -->` comments in the HTML)
 
-1. **Praise quotes** — only Aleks Mikic's quote has been supplied in full. The site has
-   placeholder cards for the other 6 (2 more front-matter blurbs, plus verified Amazon
-   reviews from Jo Lomax, Suzy, Alex, and emmacam3) on `index.html`, `the-book.html`, and
-   `buy.html`. Send the exact wording and they can be dropped straight in.
+1. **Praise quotes** — Aleks Mikic's front-matter quote plus all 4 Amazon reviews (Jo
+   Lomax, Suzy, Alex, emmacam3) are now live on `index.html`, `the-book.html`, and
+   `buy.html`. Only 2 front-matter blurbs are still placeholders — send the exact
+   wording and they can be dropped straight in.
 2. **My Story page** — built from the arc and verbatim fragments in the outline brief
    (`my-story.html`), not the full manuscript Introduction. If there's a complete essay
    text meant to be used verbatim, send it and it will replace the current draft.
 3. **US Amazon ASIN** — `buy.html` US tab is a placeholder. Send the ASIN/link once confirmed.
 4. **Signed-copy flow** — `buy.html` has a "coming soon" card; needs a real fulfilment
    link/process once decided.
-5. **Press kit real files** — the six download tiles on `press.html` currently point at
-   placeholder images rather than real files (author bio PDF, one-sheet PDF, logo asset
-   zip, sample Q&A). Swap the `href`s once those exist.
+5. **Press kit real files** — Author Bio and Sample Q&A are now drafted (see
+   `assets/img/press/author-bio.txt` and `sample-qa.txt`) — both are marked DRAFT and
+   need Silas's review/edit before use with press. The Book One-Sheet PDF still needs
+   to be produced; its download tile on `press.html` still points at a placeholder file.
 6. **Press "in-action" photo** — currently reusing a Story-page-style photo as a stand-in.
 7. **Character art** — referenced by the reserved `/characters` page; not yet supplied.
 8. **Journal content** — three post titles exist, all marked "Coming soon."
