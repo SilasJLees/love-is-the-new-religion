@@ -88,10 +88,11 @@ kind of wiring (a simple form backend like Formspree, or a small server-side end
 
 ## Outstanding items (flagged inline with `<!-- TODO -->` comments in the HTML)
 
-1. **Praise quotes** — Aleks Mikic's front-matter quote plus all 4 Amazon reviews (Jo
-   Lomax, Suzy, Alex, emmacam3) are now live on `index.html`, `the-book.html`, and
-   `buy.html`. Only 2 front-matter blurbs are still placeholders — send the exact
-   wording and they can be dropped straight in.
+1. ~~**Praise quotes**~~ — Done. All 8 real quotes are live: 4 front-matter blurbs
+   (Aleks Mikic, Suzy El-Shazly, Craig Gravil, Dawattie Basdeo) in full on
+   `the-book.html` (short pulls on `index.html`/`buy.html`), plus 4 verified Amazon
+   reviews (Jo Lomax, Suzy, Alex, emmacam3) under "What Readers Are Saying." No
+   placeholder quotes remain.
 2. **My Story page** — built from the arc and verbatim fragments in the outline brief
    (`my-story.html`), not the full manuscript Introduction. If there's a complete essay
    text meant to be used verbatim, send it and it will replace the current draft.
