@@ -97,13 +97,16 @@ kind of wiring (a simple form backend like Formspree, or a small server-side end
    (`my-story.html`), not the full manuscript Introduction. If there's a complete essay
    text meant to be used verbatim, send it and it will replace the current draft.
 3. **US Amazon ASIN** — `buy.html` US tab is a placeholder. Send the ASIN/link once confirmed.
+   UK Kindle and paperback links are both live (see item 8 in chat history — 29 Aug).
 4. **Signed-copy flow** — `buy.html` has a "coming soon" card; needs a real fulfilment
    link/process once decided.
-5. **Press kit real files** — Author Bio and Sample Q&A are now drafted (see
-   `assets/img/press/author-bio.txt` and `sample-qa.txt`) — both are marked DRAFT and
-   need Silas's review/edit before use with press. The Book One-Sheet PDF still needs
-   to be produced; its download tile on `press.html` still points at a placeholder file.
-6. **Press "in-action" photo** — currently reusing a Story-page-style photo as a stand-in.
+5. **Press kit real files** — ~~Author Bio~~ is finalized and live (no draft marker) at
+   `assets/img/press/author-bio.txt`. Sample Q&A is still drafted and marked DRAFT in
+   `assets/img/press/sample-qa.txt` — needs Silas's review/edit before use with press.
+   The Book One-Sheet PDF still needs to be produced; its download tile on `press.html`
+   still points at a placeholder file.
+6. ~~**Press "in-action" photo**~~ — Confirmed fine to use; the photo of Silas reading
+   the book is now the official press headshot, no longer flagged as a stand-in.
 7. **Character art** — referenced by the reserved `/characters` page; not yet supplied.
 8. **Journal content** — three post titles exist, all marked "Coming soon."
 9. **Newsletter/contact email provider** — see "Wiring up email" above.

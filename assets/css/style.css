@@ -110,6 +110,7 @@ p.lead {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
   height: 76px;
 }
 
@@ -255,6 +256,25 @@ p.lead {
 
 .quote-card p.editorial { font-size: 18px; margin: 0 0 16px; }
 .quote-card .attr { font-size: 13px; color: var(--gold-400); margin: 0; }
+
+.praise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.praise-grid .quote-card-wide {
+  grid-column: 1 / -1;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.praise-grid .quote-card-wide p.editorial { margin: 0; font-size: 17px; flex: 1; min-width: 240px; }
+.praise-grid .quote-card-wide p.attr { white-space: nowrap; }
+@media (max-width: 860px) {
+  .praise-grid { grid-template-columns: 1fr; }
+}
 
 /* ---------------- Hero ---------------- */
 
