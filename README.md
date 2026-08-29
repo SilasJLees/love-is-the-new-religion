@@ -69,22 +69,21 @@ this repo onto the server (`git clone`/`git pull`) into the web root — no buil
 
 ## Wiring up email (newsletter + lead magnet)
 
-No email provider is connected yet. Recommended: **Mailchimp** — generous free tier,
-simple embedded-form integration, good for a single lead magnet (the free Introduction +
-Chapter One). ConvertKit/Kit is a solid alternative if more author-focused automation
-(tagging, sequences) is wanted later.
+**Newsletter signup is live.** Both signup forms (`index.html` hero, and `contact.html`
+"Join the Newsletter") post directly to Silas's Mailchimp audience via the
+`mailchimp_form()` helper in `build_site.py` — real submissions land in Mailchimp now.
 
-Once you have an account:
-1. Create an audience and an embedded signup form in Mailchimp.
-2. Replace the `<form data-signup>` markup on `index.html` and `contact.html` with
-   Mailchimp's generated form `action`/fields, or call their API from a small backend.
-3. Remove the corresponding no-op handling in `assets/js/main.js` (the `form[data-signup]`
-   submit listener currently just shows a local success message and does not send anywhere).
-4. Set up the actual delivery of the Introduction + Chapter One PDF (Mailchimp's automation
-   can email it automatically on signup).
+Still to do in Mailchimp itself:
+1. Set up an automation so the free Introduction + Chapter One PDF is emailed
+   automatically on signup (Mailchimp: Automations → a "welcome new subscribers"
+   journey with the PDF attached or linked).
+2. Style the confirmation/thank-you page Mailchimp shows after signup (it opens in a
+   new tab by default — cosmetic only, doesn't need to match the site exactly).
 
-The contact form on `contact.html` has the same placeholder behaviour and needs the same
-kind of wiring (a simple form backend like Formspree, or a small server-side endpoint).
+The separate contact **message** form on `contact.html` (name/email/message, for direct
+enquiries — not the newsletter) is still a placeholder with no backend. Wire it up with
+a simple form backend like Formspree, or a small server-side endpoint, then remove the
+no-op handling in `assets/js/main.js` (the `form[data-signup]` submit listener).
 
 ## Outstanding items (flagged inline with `<!-- TODO -->` comments in the HTML)
 
@@ -109,7 +108,11 @@ kind of wiring (a simple form backend like Formspree, or a small server-side end
    the book is now the official press headshot, no longer flagged as a stand-in.
 7. **Character art** — referenced by the reserved `/characters` page; not yet supplied.
 8. **Journal content** — three post titles exist, all marked "Coming soon."
-9. **Newsletter/contact email provider** — see "Wiring up email" above.
+9. ~~**Newsletter email provider**~~ — Done, Mailchimp is live (see "Wiring up email"
+   above). The `love@loveisthenewreligion.com` mailbox itself is a separate, still-open
+   item — needs a mail host chosen and set up (see chat history, 29 Aug) before Spark/iPhone
+   can be configured. The contact **message** form (separate from the newsletter) still
+   needs its own backend.
 10. **Social links** — footer has a placeholder; add real profile links once active on any platform.
 
 ## Image assets
