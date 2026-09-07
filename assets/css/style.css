@@ -101,9 +101,18 @@ p.lead {
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid var(--ink-500);
+}
+/* Blur lives on a pseudo-element, not .site-header itself, so it never becomes
+   a containing block for the mobile nav's position:fixed panel (a backdrop-filter
+   on an ancestor otherwise traps fixed-position descendants inside its own box). */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(11, 9, 8, 0.92);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--ink-500);
 }
 
 .site-header .wrap {
@@ -430,6 +439,8 @@ textarea.field { width: 100%; min-height: 140px; resize: vertical; }
   text-transform: uppercase;
   color: var(--taupe-400);
 }
+.journal-post h3 a:hover { color: var(--gold-400); }
+.journal-status-live { color: var(--gold-400); }
 
 .talking-point {
   padding: 18px 0;
